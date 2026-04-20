@@ -6,7 +6,7 @@
   <!-- nodes -->
 
 <SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="TRY">
-  <COMMENT></COMMENT>
+  <COMMENT>Generate Triangle (using *)</COMMENT>
 
   <!-- nodes -->
 
