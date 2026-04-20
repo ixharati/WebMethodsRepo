@@ -5,7 +5,7 @@
   <!-- nodes -->
 
 <SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="TRY">
-  <COMMENT></COMMENT>
+  <COMMENT>Number(123) --- String(one two three)</COMMENT>
 
   <!-- nodes -->
 
@@ -235,7 +235,7 @@
 </MAPINVOKE>
 </MAP>
 
-<RETRY TIMEOUT="" COUNT="2" BACK-OFF="" LOOP-ON="SUCCESS">
+<RETRY TIMEOUT="" COUNT="%le%" BACK-OFF="" LOOP-ON="SUCCESS">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
