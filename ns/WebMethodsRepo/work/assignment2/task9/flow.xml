@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>Prime or Not</COMMENT>
 
   <!-- nodes -->
 
@@ -1073,7 +1074,6 @@
 </MAPINVOKE>
 </MAP>
 </RETRY>
-</SEQUENCE>
 
 <MAP TIMEOUT="" MODE="STANDALONE">
   <COMMENT></COMMENT>
@@ -1227,6 +1227,7 @@
 <MAPDELETE FIELD="/div;1;0">
 </MAPDELETE>
 </MAP>
+</SEQUENCE>
 
 <SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="CATCH">
   <COMMENT></COMMENT>
