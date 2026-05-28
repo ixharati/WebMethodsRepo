@@ -167,6 +167,21 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
+        <value name="field_name">results</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">1</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
         <value name="field_name">stats</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
@@ -194,21 +209,6 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">results</value>
-        <value name="field_type">record</value>
-        <value name="field_dim">1</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="is_soap_array_encoding_used">false</value>
-        <array name="rec_fields" type="record" depth="1">
-        </array>
-        <value name="modifiable">true</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -303,9 +303,8 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">appointment_id</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
-                <value name="wrapper_type">java.lang.Integer</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
@@ -337,7 +336,7 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">appointment_date</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
@@ -348,7 +347,7 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">appointment_time</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
@@ -370,7 +369,7 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">booking_time</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
@@ -521,6 +520,21 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
+        <value name="field_name">results</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">1</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
         <value name="field_name">stats</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
@@ -548,21 +562,6 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">results</value>
-        <value name="field_type">record</value>
-        <value name="field_dim">1</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="is_soap_array_encoding_used">false</value>
-        <array name="rec_fields" type="record" depth="1">
-        </array>
-        <value name="modifiable">true</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>

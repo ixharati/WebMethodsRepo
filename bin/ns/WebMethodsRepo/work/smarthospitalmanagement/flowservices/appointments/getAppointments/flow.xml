@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -11,6 +12,14 @@
 
 <INVOKE TIMEOUT="" SERVICE="WebMethodsRepo.work.smarthospitalmanagement.adapters.appointments:getAppointments" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
 </INVOKE>
 
 <MAP TIMEOUT="" MODE="STANDALONE">
@@ -46,19 +55,6 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">stats</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">WebMethodsRepo.work.smarthospitalmanagement:stat</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
         <value name="field_name">results</value>
         <value name="field_type">record</value>
         <value name="field_dim">1</value>
@@ -69,6 +65,19 @@
         <array name="rec_fields" type="record" depth="1">
         </array>
         <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">stats</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">WebMethodsRepo.work.smarthospitalmanagement:stat</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -116,9 +125,8 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">appointment_id</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
-                <value name="wrapper_type">java.lang.Integer</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
@@ -150,7 +158,7 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">appointment_date</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
@@ -161,7 +169,7 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">appointment_time</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
@@ -183,7 +191,7 @@
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
                 <value name="field_name">booking_time</value>
-                <value name="field_type">object</value>
+                <value name="field_type">string</value>
                 <value name="field_dim">0</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
@@ -202,9 +210,6 @@
 </MAPSOURCE>
 
   <!-- nodes -->
-
-<MAPCOPY FROM="/getAppointmentsOutput;2;0/results;2;1" TO="/results;2;1">
-</MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="true" FIELD="/stats;4;0;WebMethodsRepo.work.smarthospitalmanagement:stat/Code;1;0">
   <DATA ENCODING="XMLValues" I18N="true">
@@ -289,6 +294,9 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPCOPY FROM="/getAppointmentsOutput;2;0/results;2;1" TO="/results;2;1">
+</MAPCOPY>
 </MAP>
 </SEQUENCE>
 
@@ -334,19 +342,6 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">stats</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">WebMethodsRepo.work.smarthospitalmanagement:stat</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
         <value name="field_name">results</value>
         <value name="field_type">record</value>
         <value name="field_dim">1</value>
@@ -357,6 +352,19 @@
         <array name="rec_fields" type="record" depth="1">
         </array>
         <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">stats</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">WebMethodsRepo.work.smarthospitalmanagement:stat</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
