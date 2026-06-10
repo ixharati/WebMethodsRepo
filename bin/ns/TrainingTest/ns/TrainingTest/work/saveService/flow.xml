@@ -5,7 +5,7 @@
   <!-- nodes -->
 
 <INVOKE TIMEOUT="" SERVICE="pub.art.transaction:startTransaction" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT></COMMENT>
+  <COMMENT>Starting Transaction</COMMENT>
 </INVOKE>
 
 <SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="TRY">
@@ -3748,7 +3748,7 @@
 </LOOP>
 
 <BRANCH TIMEOUT="" SWITCH="/companyRefInsert">
-  <COMMENT></COMMENT>
+  <COMMENT>Inserting Company</COMMENT>
 
   <!-- nodes -->
 
@@ -4018,7 +4018,7 @@
 </BRANCH>
 
 <BRANCH TIMEOUT="" SWITCH="/companyRefUpdate">
-  <COMMENT></COMMENT>
+  <COMMENT>Updating Company</COMMENT>
 
   <!-- nodes -->
 
@@ -4551,7 +4551,7 @@
 </BRANCH>
 
 <BRANCH TIMEOUT="" SWITCH="/projectRefInsert">
-  <COMMENT></COMMENT>
+  <COMMENT>Inserting Project</COMMENT>
 
   <!-- nodes -->
 
@@ -4877,7 +4877,7 @@
 </BRANCH>
 
 <BRANCH TIMEOUT="" SWITCH="/projectRefUpdate">
-  <COMMENT></COMMENT>
+  <COMMENT>Updating Project</COMMENT>
 
   <!-- nodes -->
 
@@ -5231,7 +5231,7 @@
 </BRANCH>
 
 <BRANCH TIMEOUT="" SWITCH="/taskRefInsert">
-  <COMMENT></COMMENT>
+  <COMMENT>Inserting Task</COMMENT>
 
   <!-- nodes -->
 
@@ -5613,7 +5613,7 @@
 </BRANCH>
 
 <BRANCH TIMEOUT="" SWITCH="/taskRefUpdate">
-  <COMMENT></COMMENT>
+  <COMMENT>Updating Task</COMMENT>
 
   <!-- nodes -->
 
@@ -6026,7 +6026,7 @@
 </BRANCH>
 
 <MAP TIMEOUT="" MODE="STANDALONE">
-  <COMMENT></COMMENT>
+  <COMMENT>Success Responses</COMMENT>
   <MAPTARGET>
 
 <Values version="2.0">
@@ -6598,7 +6598,7 @@
 </MAP>
 
 <INVOKE TIMEOUT="" SERVICE="pub.art.transaction:commitTransaction" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT></COMMENT>
+  <COMMENT>Commiting Transaction</COMMENT>
 
   <!-- nodes -->
 
@@ -6817,7 +6817,7 @@
 </INVOKE>
 
 <MAP TIMEOUT="" MODE="STANDALONE">
-  <COMMENT></COMMENT>
+  <COMMENT>Error Responses</COMMENT>
   <MAPTARGET>
 
 <Values version="2.0">
@@ -6983,7 +6983,7 @@
 </MAP>
 
 <INVOKE TIMEOUT="" SERVICE="pub.art.transaction:rollbackTransaction" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT></COMMENT>
+  <COMMENT>Rolling Back Transaction</COMMENT>
 
   <!-- nodes -->
 
