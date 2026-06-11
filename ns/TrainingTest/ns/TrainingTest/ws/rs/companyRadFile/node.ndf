@@ -46,8 +46,8 @@
       <Boolean name="recursive">false</Boolean>
       <null name="description"/>
       <record name="parameters" javaclass="com.wm.util.Values">
-        <record name="response" javaclass="com.wm.util.Values">
-          <value name="name">response</value>
+        <record name="status" javaclass="com.wm.util.Values">
+          <value name="name">status</value>
           <value name="source">BODY</value>
           <value name="type">REFERENCE</value>
           <null name="description"/>
@@ -295,8 +295,8 @@
       <Boolean name="recursive">false</Boolean>
       <null name="description"/>
       <record name="parameters" javaclass="com.wm.util.Values">
-        <record name="response" javaclass="com.wm.util.Values">
-          <value name="name">response</value>
+        <record name="status" javaclass="com.wm.util.Values">
+          <value name="name">status</value>
           <value name="source">BODY</value>
           <value name="type">REFERENCE</value>
           <null name="description"/>
@@ -349,8 +349,8 @@
       <Boolean name="recursive">false</Boolean>
       <null name="description"/>
       <record name="parameters" javaclass="com.wm.util.Values">
-        <record name="stat" javaclass="com.wm.util.Values">
-          <value name="name">stat</value>
+        <record name="status" javaclass="com.wm.util.Values">
+          <value name="name">status</value>
           <value name="source">BODY</value>
           <value name="type">REFERENCE</value>
           <null name="description"/>
